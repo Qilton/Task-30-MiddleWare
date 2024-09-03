@@ -16,7 +16,7 @@ function App() {
 
   const onSubmit = async (data) => {
     
-    let r = await fetch("http://localhost:3000/submit", {method: "POST",  headers: {
+    let r = await fetch("https://task-30-middleware-server.vercel.app/submit", {method: "POST",  headers: {
       "Content-Type": "application/json", 
     }, body: JSON.stringify(data)})
     let res = await r.text()
